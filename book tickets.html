@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Time, serif;
+            margin: 0;
+            padding: 0;
+            background: url('img3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+        form {
+            background: url('img3.jpg') no-repeat center center fixed;
+
+            padding: 20px;
+            max-width: 400px;
+            margin: 30px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color:white;
+        }
+        input, select, button {
+            width: 91%;
+            margin-bottom: 13px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #808080;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color:white;
+        }
+ .btn {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #808080;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Bus Ticket Booking</h1>
+    <form action="/book-bus-ticket" method="post">
+        <label for="from">From:</label>
+
+        <select id="from" name="from" required>
+            <option value="">-- Select Starting Location --</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Hyderabad">Hyderabad</option>
+        </select>
+
+        <label for="to">To:</label>
+        <select id="to" name="to" required>
+            <option value="">-- Select Destination --</option>
+            <option value="Tirupati">Tirupati</option>
+            <option value="Nellore">Nellore</option>
+            <option value="Kadapa">Kadapa</option>
+        </select>
+
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" name="seats" min="1" max="10" required>
+
+        <label for="name">Passenger Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter passenger's name" required>
+
+        <label for="phone">Contact Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter contact number" required>
+
+        <button type="submit">Book Ticket</button>
+<a href="homepage.html" class="btn">Back to Home</a>
+
+
+
+    </form>
+
+</body>
+</html>

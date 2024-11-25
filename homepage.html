@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bus Booking System</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Time, serif;
+            margin: 0;
+            padding: 0;
+            background: url('img3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            color: #ffae42;
+            font-family: 'Algerian', sans-serif;
+            font-weight: bold;
+            padding: 1px 2px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+    width: 150px; /* Increased from 60px */
+    height: 150px; /* Increased from 60px */
+    border-radius: 40%; /* Keeps the logo circular */
+    object-fit: cover;
+    margin-right: 15px;}
+
+header .social-links img {
+    width: 40px; /* Increased from 30px */
+    height: 40px; /* Increased from 30px */
+    object-fit: cover;
+}
+
+
+        nav {
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn, .register-btn {
+            background: url('rb.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            border: 1px solid #0056b3;
+            padding: 5px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .login-btn:hover, .register-btn:hover {
+            opacity: 0.9;
+            color: #ffcc00;
+        }
+
+        .search-container {
+            margin: 10px auto;
+            padding: 10px;
+            max-width: 300px;
+                         color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container input, .search-container button {
+            padding: 5px;
+            margin: 1px 0;
+            width: 91%;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+        }
+
+        .search-container input {
+            background: white;
+            color: black;
+        }
+
+        .search-container button {
+            background: #000000;
+            width: 95%;
+            color: white;
+        }
+
+        .search-container button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- Logo and Title -->
+    <div class="logo-container">
+        <img src="logoo.jpg">
+        <h1>WILDFIRE Bus Services</h1>
+    </div>
+    <!-- Social Links and Phone Number -->
+    <div class="social-links">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="insta.jpg" alt="Instagram">
+             <span style="color: #f9ddb1; font-size: 40px;> </span>
+
+        </a>
+        <a href="tel:7032710383" title="Call Us">
+            <span style="color: #f9ddb1; font-size: 20px;">📞7032710383 </span>
+        </a>
+    </div>
+</header>
+    <nav>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="book tickets.html">Book Tickets</a>
+            <a href="my bookings.html">My Bookings</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="offers.html">Offers</a>
+            <a href="faqs.html">FAQ's</a>
+            <a href="supports.html">Supports</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+        <div>
+            <!-- Link to login page -->
+            <a href="login page for bus.html" class="login-btn">Login</a>
+            <!-- Link to register page -->
+            <a href="register.html" class="register-btn">Register</a>
+        </div>
+    </nav>
+    <div class="search-container">
+       <center> <h2>Find Your Bus</center></h2>
+        <form action="search-results.html" method="GET">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Enter starting city" required>
+            
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination city" required>
+            
+            <label for="date">Date of Journey:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Search Buses</button>
+        </form>
+    </div>
+</body>
+</html>

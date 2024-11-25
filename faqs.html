@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - Online Bus Booking</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Time, serif;
+            margin: 0;
+            padding: 0;
+            background: url('img3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: 'Times New Roman', Time, serif;
+                        background: url('img3.jpg') no-repeat center center fixed;
+            background-size: cover;
+                    
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: white;
+    }
+    .faq {
+      margin: 15px 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .faq h3 {
+      margin: 0;
+      cursor: pointer;
+      color: white;
+    }
+    .faq p {
+      margin: 5px 0 0;
+      display: none;
+      color: #555;
+    }
+    .faq h3:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const faqHeaders = document.querySelectorAll('.faq h3');
+      faqHeaders.forEach(header => {
+        header.addEventListener('click', function () {
+          const content = this.nextElementSibling;
+          content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    });
+.btn {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #808080;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Frequently Asked Questions (FAQs)</h1>
+    <div class="faq">
+      <h3>How do I book a bus ticket?</h3>
+      <p>To book a bus ticket, simply visit the booking page, select your destination, date, and seat, then proceed to payment.</p>
+    </div>
+    <div class="faq">
+      <h3>Can I cancel my ticket?</h3>
+      <p>Yes, tickets can be canceled from the "My Bookings" page. Cancellation charges may apply as per the policy.</p>
+    </div>
+    <div class="faq">
+      <h3>What payment methods are accepted?</h3>
+      <p>We accept various payment methods, including credit/debit cards, UPI, mobile wallets, and net banking.</p>
+    </div>
+    <div class="faq">
+      <h3>How do I track my bus?</h3>
+      <p>You can track your bus in real-time by logging in to your account and clicking on "Track Bus" in the menu.</p>
+    </div>
+    <div class="faq">
+      <h3>Are refunds available for canceled tickets?</h3>
+      <p>Refunds are available as per our cancellation policy. The refund amount will be credited to your account within 5-7 working days.</p>
+    </div>
+    <div class="faq">
+      <h3>Is it safe to book tickets online?</h3>
+      <p>Yes, our platform uses secure payment gateways to ensure the safety and security of your transactions.</p>
+    </div>
+  </div>
+<a href="homepage.html" class="btn">Back to Home</a>
+</body>
+</html>
